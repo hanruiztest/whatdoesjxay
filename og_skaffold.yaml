@@ -16,7 +16,7 @@ profiles:
   build:
     tagPolicy:
       envTemplate:
-        template: '{{.DOCKER_REGISTRY}}/{{.IMAGE_NAME}}:{{.UUID}}'
+        template: '{{.DOCKER_REGISTRY}}/{{.IMAGE_NAME}}:{{.DIGEST_HEX}}'
     local: {}
   deploy:
     helm:
@@ -25,4 +25,4 @@ profiles:
         chartPath: charts/whatdoesjxay
         setValueTemplates:
           image.repository: '{{.DOCKER_REGISTRY}}/{{.IMAGE_NAME}}'
-          image.tag: '{{.UUID}}'
+          image.tag: '{{.DIGEST_HEX}}'
