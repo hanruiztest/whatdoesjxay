@@ -1,5 +1,9 @@
 pipelineConfig:
   pipelines:
+    release:
+      pipeline:
+        agent:
+          image: maven
     pullRequest:
       postBuild:
         steps:
