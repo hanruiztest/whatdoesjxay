@@ -4,3 +4,4 @@ pipelineConfig:
       postBuild:
         steps:
         - command: echo "==========================post|postBuild|pullRequest================================"
+        - command: echo "ffffffffffffffffffffffffffffffffffffffffffffffffffffffu"
