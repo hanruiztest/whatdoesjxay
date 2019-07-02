@@ -1,0 +1,6 @@
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      postBuild:
+        steps:
+        - command: echo "==========================post|postBuild|pullRequest================================"
